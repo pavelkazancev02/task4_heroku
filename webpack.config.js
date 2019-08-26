@@ -15,14 +15,14 @@ module.exports = {
   ],
   module: {
     rules: [
-      {
-        test: /\.(css)$/,
-        include: /vendor/,
-        use: ExtractTextPlugin.extract({
-        fallback: 'style-loader',
-        use: 'css-loader',
-      }),
-      }
+{
+  test: /\.(css)$/,
+  include: /vendor/,
+  use: ExtractTextPlugin.extract({
+    fallback: 'style-loader',
+    use: 'css-loader',
+  })
+}
     ],
     loaders: [
       { test: /\.json$/, use: 'json-loader' },
